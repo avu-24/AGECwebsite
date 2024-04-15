@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>A.G.E.C.</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-UmC4p/vv1qFNDNNtIfSFB3z+f2I6Ts1P07LDqFaqz4huBwl+Xt+J2jlYv8Y0M2d9" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+        <style>
+        .header, .navbar, .main, .footer {
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .header, .footer, .navbar {
+            background-color: #001c46;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .navbar {
+            padding: 10px 0;
+        }
+        .footer {
+            position: relative;
+            bottom: 0;
+        } 
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Blinker', sans-serif;
+        }
+        .service {
+            margin-top: 20px;
+        }
+        .service img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+        .service .image-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 8px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .service:hover img {
+            transform: scale(1.05);
+            filter: blur(3px);
+        }
+        .service:hover .image-overlay {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header__left">
+            <h1>AMERICAN GENERAL ENGINEERING COMPANY</h1>
+        </div>
+        <div class="header__right">
+            <div class="header__contact">
+                <p><i class="fas fa-phone"></i> 951-517-5218</p>
+                <p><i class="fas fa-envelope"></i> info@agec.com</p>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="#home" id="navbar__logo">
+                <img src="images/AGEC LOGO (3).png" height="75" alt="AGEC logo">
+            </a>
+            <div class="dropdown">
+                <button class="dropbtn"> <h1 style="font-size: 2.5em; font-weight: 700; color: #fff;">Menu</h1><i class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="/index.html" class="navbar__links">Home</a>
+                    <a href="/about.html" class="navbar__links">About</a>
+                    <a href="/services.html" class="navbar__links">Services</a>
+                    <a href="/projects.html" class="navbar__links">Projects</a>
+                    <a href="/careers.html" class="navbar__links">Careers</a>
+                    <a href="/contact.html" class="navbar__links">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <script src="app.js"></script>
+    <main>
+        <div class="main">
+            <div class="home__container">
+                <div class="main__content h1">
+                    <section>
+                        <h2 style="font-size: 2.5em; font-weight: 700; color: #fff; text-align: center;"> A.G.E.C Projects </h2>
+                        <div class="service">
+                            <div class="slideshow-container">
+                                <img src="images/TESLA SANTA CLARITA 2ND PICTURE.jpg" alt="Tesla Service Center">
+                                <div class="image-overlay">
+                                    <p style="font-size: 2.5em; font-weight: 700; color: #fff; text-align: center;">Tesla Service Center</p>
+                                </div>
+                            </div>
+                        </div>  
+                
+            <div class="service">
+                <div class="slideshow-container">
+                        <img src="images/LONGHORN STEAKHOUSE PICTURE.jpg" style="width:100%">
+                        <div class="image-overlay">
+                            <p style="font-size: 2.5em; font-weight: 700; color: #fff; text-align: center;">Long Horn Steak House</p>
+                    </div>
+                </div>
+            </div> 
+                
+            <div class="service">
+                <div class="slideshow-container">
+                        <img src="images/IMG_2877.jpg" style="width:100%">
+                        <div class="image-overlay">
+                            <p style="font-size: 2.5em; font-weight: 700; color: #fff; text-align: center;">Texas Road House</p>
+                    </div>
+                </div>
+            </div> 
+                
+            <div class="service">
+                <div class="slideshow-container">
+                        <img src="images/KNOTTS BERRY FARM PICTURE.jpg" style="width:100%">
+                        <div class="image-overlay">
+                            <p style="font-size: 2.5em; font-weight: 700; color: #fff; text-align: center;">Knotts Berry Farm</p>
+                    </div>
+                </div>
+            </div> 
+                
+            <div class="service">
+                <div class="slideshow-container">
+                        <img src="images/20230809_084709.jpg" style="width:100%">
+                        <div class="image-overlay">
+                            <p style="font-size: 2.5em; font-weight: 700; color: #fff; text-align: center;">Popeyes</p>
+                        </div>
+                </div>
+            </div> 
+                
+                
+            <div class="service">
+                <div class="slideshow-container">
+                        <img src="images/Screensho011.jpg" style="width:100%">
+                        <div class="image-overlay">
+                            <p style="font-size: 2.5em; font-weight: 700; color: #fff; text-align: center;">Chick-Fil-A</p>
+                    </div>
+                </div>
+            </div> 
+        </section>
+    
+    </main>     
+
+
+    <footer class="footer">
+        <p>EXCELLENCE BELOW THE SURFACE, STRENGTH ABOVE GROUND.</p>
+        <p>&copy; 2021 American General Engineering Company, Inc. | All rights reserved </p>
+        <p>Website Designed, Created, and Protected By ByteNet Solutions</p>
+    </footer>
+        </div>
+    </div>
+
+    
+    <script src="app.js"></script>
+        
+</body>
+</html>
