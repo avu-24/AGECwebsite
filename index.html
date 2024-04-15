@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>A.G.E.C.</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-UmC4p/vv1qFNDNNtIfSFB3z+f2I6Ts1P07LDqFaqz4huBwl+Xt+J2jlYv8Y0M2d9" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+        <style>
+        .header, .navbar, .main, .footer {
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .header, .footer, .navbar {
+            background-color: #001c46;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .navbar {
+            padding: 10px 0;
+        }
+        .footer {
+            position: relative;
+            bottom: 0;
+        } 
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Blinker', sans-serif;
+        }
+        .service {
+            margin-top: 20px;
+        }
+        .service img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+        .service .image-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 8px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .service:hover img {
+            transform: scale(1.05);
+            filter: blur(3px);
+        }
+        .service:hover .image-overlay {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="header__left">
+            <h1>AMERICAN GENERAL ENGINEERING COMPANY</h1>
+        </div>
+        <div class="header__right">
+            <div class="header__contact">
+                <p><i class="fas fa-phone"></i> 951-517-5218</p>
+                <p><i class="fas fa-envelope"></i> info@agec.com</p>
+            </div>
+        </div>
+    </header>
+    <!-- Drop down menu -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="#home" id="navbar__logo">
+                <img src="images/AGEC LOGO (3).png" height="75" alt="AGEC logo">
+            </a>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <h1 class="menu-title" style="font-size: 2.5em; font-weight: 700; color: #fff;">Menu</h1>
+                    <i class="fas fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="/index.html" class="navbar__links">Home</a>
+                    <a href="/about.html" class="navbar__links">About</a>
+                    <a href="/services.html" class="navbar__links">Services</a>
+                    <a href="/projects.html" class="navbar__links">Projects</a>
+                    <a href="/careers.html" class="navbar__links">Careers</a>
+                    <a href="/contact.html" class="navbar__links">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- slide show -->
+    <main>
+            <p style="font-size: 2em; font-weight: 700; text-align: center;">Delivering Vital Underground Utility Services Across the Dynamic Landscape of Southern California.</p>
+                <div class="home__container">
+                    <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="images/IMG_1093.jpg" alt="Slide 1">
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/IMG_1099.jpg" alt="Slide 2">
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/IMG_1110.jpg" alt="Slide 3">
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/IMG_1111.jpg" alt="Slide 4">
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/IMG_1112.jpg" alt="Slide 5">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <script>
+                var slideIndex = 0; 
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            slideIndex++;
+
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        showSlides();
+        </script>
+
+
+            <div class="main__content h1">
+            <section>
+                <b><h2 style="font-size: 2.5em; font-weight: 800; color: #fff;">Why American General Engineering Company?</h2></b>
+                    <h1 style="text-align: center; color: 001c46; font-size: 1.5em; font-weight: 400 ">Your trusted partner in Underground Utility solutions. Our team of licensed and experienced professionals is dedicated to delivering top-tier quality results. With a proven track record, we specialize in providing reliable services tailored to a diverse range of underground utility needs. Backed by a commitment to precision and excellence, American General Engineering Company has earned a reputation for unmatched craftsmanship. Choose us as your reliable partner, ensuring the success and efficiency of your underground utility projects.</h1>
+                    <button class="main__btn"><a href="/about.html">LEARN MORE</a></button>
+            </section>           
+            
+                <div class="card-container">
+                    <div class="card">
+                        <p style="text-align: center;">Sewer</p>
+                    </div>
+                    <div class="card">
+                        <p style="text-align: center;">Water</p>
+                    </div>
+                    <div class="card">
+                        <p style="text-align: center;">Storm Drain</p>
+                    </div>
+                    <div class="card">
+                        <p style="text-align: center;">Electrical</p>
+                    </div>
+                </div>
+
+                <section>
+                    <h2 class="content-title">What sets us apart?</h2>
+                    <div class="row">
+                        <div class="column">
+                            <h1 style="text-align: center; color: 001c46; font-size: 1.5em; font-weight: 400 ">Maximize Project Value with American General Engineering Company's Exceptional Solutions. Our dedication to excellence transcends the norm. We thoroughly evaluate your entire project, pinpointing optimization possibilities to guarantee not only cost savings but also a schedule that outpaces expectations. Contact American General Engineering Company now for unparalleled expertise in underground utility solutions and superior services. Experience the difference that sets us apart.</h1>
+                            <button class="main__btn"><a href="/contact.html">Contact Us!</a></button>
+                        </div>
+                        <div class="container">
+                            <img class="image" src="images/IMG_1112.jpg" alt="Your Image">
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+        <p>EXCELLENCE BELOW THE SURFACE, STRENGTH ABOVE GROUND.</p>
+        <p>&copy; 2021 American General Engineering Company, Inc. | All rights reserved </p>
+        <p>Website Designed, Created, and Protected By ByteNet Solutions</p>
+    </footer>
+</body>
+
+</html>
+
+
